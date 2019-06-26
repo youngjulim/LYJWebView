@@ -10,6 +10,7 @@ import com.lyj.webview.model.WebViewClientCallBack;
 
 public class LYJWebView extends WebView {
 
+    // 태크
     private static final String javascriptInterfaceName = "android";
 
     private Context mContext;

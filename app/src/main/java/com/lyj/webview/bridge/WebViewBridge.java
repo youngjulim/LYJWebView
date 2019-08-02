@@ -48,4 +48,12 @@ public class WebViewBridge {
     public void play_sound(final int soundCode){
         mJavaScriptCallBack.play_sound(soundCode);
     }
+    @JavascriptInterface
+    public void send_msg(String msg, String phoneNumber){
+        mJavaScriptCallBack.send_msg(msg, phoneNumber);
+    }
+    @JavascriptInterface
+    public void send_call(String phoneNumber){
+        mJavaScriptCallBack.send_call(phoneNumber);
+    }
 }

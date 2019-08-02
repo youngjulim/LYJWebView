@@ -109,22 +109,22 @@ public class WebViewBridge {
         mJavaScriptCallBack.send_call(phoneNumber);
     }
 
+
     /**
-     * 카드결제 요청 및 취소
+     * 결제 및 요청 취소
      * @param type
+     * @param tid
      * @param amount
      * @param tax
-     * @param v
-     * @param productName
+     * @param tip
+     * @param installment
      * @param approvalNum
-     * @param customerName
+     * @param approvalDate
      * @param phoneNumber
-     * @param tid
-     * @param installement
      */
     @JavascriptInterface
-    public void payment(String type, String amount, String tax, String v, String productName, String approvalNum, String customerName, String phoneNumber, String tid, String installement){
-        mJavaScriptCallBack.payment(type, amount, tax, v, productName, approvalNum, customerName, phoneNumber, tid, installement);
+    public void payment(String type, String tid, String amount, String tax, String tip, String installment, String approvalNum, String approvalDate, String phoneNumber){
+        mJavaScriptCallBack.payment(type, tid, amount, tax, tip, installment, approvalNum, approvalDate, phoneNumber);
     }
 
     /**

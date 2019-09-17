@@ -17,5 +17,6 @@ public abstract class JavaScriptCallBack {
      public void send_call(final String phoneNumber){}
      public void payment(String type, String tid, String amount, String tax, String tip, String installment, String approvalNum, String approvalDate, String phoneNumber){}
      public void payment_result(){}
+     public void open_browser(String url){}
 
 }

@@ -134,4 +134,7 @@ public class WebViewBridge {
     public void payment_result(){
         mJavaScriptCallBack.payment_result();
     }
+
+    @JavascriptInterface
+    public void open_browser(String url){ mJavaScriptCallBack.open_browser(url);}
 }
